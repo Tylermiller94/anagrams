@@ -9,7 +9,7 @@ def initialize(word1, word2)
 end
 
 def is_anagram?
-  if @word1.include?("/[aeoui]/") || @word2.include?("a") || @word2.include?("e") || @word2.include?("i") || @word2.include?("o") || @word2.include?("u")
+  if @word1.include?("aeoui") || @word2.include?("a") || @word2.include?("e") || @word2.include?("i") || @word2.include?("o") || @word2.include?("u")
     if @word1.downcase.split('').sort == @word2.downcase.split('').sort
       return "These words are anagrams"
     else

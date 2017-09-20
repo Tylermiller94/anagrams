@@ -24,7 +24,7 @@ describe(Anagrams)
 
   describe('#is_palindrome?')do
     it("check input for palindrome")do
-      test_anagram = Anagrams.new("dad", "dad")
+      test_anagram = Anagrams.new("racecar", "racecar")
       expect(test_anagram.is_palindrome?()).to(eq("this is a palindrome"))
     end
   end
